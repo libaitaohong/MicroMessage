@@ -15,6 +15,7 @@ import java.io.IOException;
 public class DeleteOneServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        System.out.println("进入DeleteOneServlet");
         //设置字符集
         req.setCharacterEncoding("UTF-8");
         //接收页面的值，
@@ -27,6 +28,7 @@ public class DeleteOneServlet extends HttpServlet {
         //跳转
         //req.getRequestDispatcher("/WEB-INF/jsp/back/list1.jsp").forward(req,resp);
         //删除后直接回到jsp界面没有数据，体验不好，所以回到/List.action1
+        System.out.println("返回到/List.action1");
         req.getRequestDispatcher("/List.action1").forward(req,resp);
     }
 
