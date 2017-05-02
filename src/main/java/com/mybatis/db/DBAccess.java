@@ -14,6 +14,7 @@ import java.io.Reader;
  */
 public class DBAccess {
      public SqlSession getSqlSession() throws IOException {
+         System.out.println("进入DBAccess.getSqlSession()");
         //通过配置文件获取数据库连接
          //通过Resources类获取Reader这个对象，然后给出核心配置文件所在路径
          //将异常抛给dao层去处理
@@ -22,6 +23,7 @@ public class DBAccess {
          SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(reader);
          //通过sqlSessionFactory打开一个数据库会话
          SqlSession sqlSession = sqlSessionFactory.openSession();
+         System.out.println("返回sqlSession");
          return sqlSession;
      }
 }
