@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="MicroMessage">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/jsp/jstl/jstl-api/1.2/jstl-api-1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

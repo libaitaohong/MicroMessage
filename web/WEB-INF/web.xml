@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet>
+        <servlet-name>ListServlet</servlet-name>
+        <servlet-class>com.imooc.servlet.ListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListServlet</servlet-name>
+        <url-pattern>/List.action</url-pattern>  <!--url写List.action-->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ListServlet1</servlet-name>
+        <servlet-class>com.mybatis.servlet.ListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListServlet1</servlet-name>
+        <url-pattern>/List.action1</url-pattern>  <!--url写List.action1-->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteOneServlet</servlet-name>
+        <servlet-class>com.mybatis.servlet.DeleteOneServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteOneServlet</servlet-name>
+        <url-pattern>/DeleteOneServlet.action</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteBatchServlet</servlet-name>
+        <servlet-class>com.mybatis.servlet.DeleteBatchServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteBatchServlet</servlet-name>
+        <url-pattern>/DeleteBatchServlet.action</url-pattern>
+    </servlet-mapping>
+</web-app>
