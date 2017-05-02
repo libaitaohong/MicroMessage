@@ -18,10 +18,12 @@ public class MaintainService {
      * 所以将传入参数的值直接设置为String类型，然后对这个id进行判空
      */
     public void deleteOne(String id){
+        System.out.println("进入service.deleteOne");
         if (id != null && !"".equals(id.trim())){
             MessageDao messageDao = new MessageDao();
             messageDao.deleteOne(Integer.valueOf(id));
         }
+        System.out.println("退出service.deleteOne");
     }
 
     /**
